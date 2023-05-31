@@ -7,6 +7,9 @@ string teststr2 = "the quick brown fox jumps over the lazy dog";
 
 // TODO: The IsMatch function is used to determine if the content of a string
 // results in a match with the given Regex
+Regex CapWords = new Regex(@"[A-Z]\w+");
+Console.WriteLine(CapWords.IsMatch(teststr1));
+Console.WriteLine(CapWords.IsMatch(teststr2));
 
 
 // TODO: The RegexOptions argument can be used to perform
